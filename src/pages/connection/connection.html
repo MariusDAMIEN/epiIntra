@@ -16,10 +16,22 @@
 <ion-content padding class="body">
 	<!-- <ion-img width="280" height="150" src="assets/imgs/epi.png" ></ion-img> -->
 	<br/>
-	<h1>EPITECH</h1><br/><br/><br/><br/><br/>
-	<p>Enter your autologin link:</p>
-	<input type="text" name="auth"><br/><br/>
-	<button ion-button (click)="mySubmit($event)">submit</button>
+	<h1>EPITECH</h1><br/><br/><br/>
+	<!-- <p>Enter your autologin link:</p> -->
+	<!-- <input type="text" name="auth"><br/><br/> -->
+	<ion-item>
+		<ion-label color="primary" floating>Enter your autolink</ion-label>
+		<ion-input></ion-input>
+	</ion-item>
+	<br/>
+	<!-- <div *ngIf="!errorConnection; then good else notGood"></div> -->
+	<!-- <button #good ion-button (click)="mySubmit($event)">submit</button> -->
+	<button ion-button *ngIf="!errorConnection" (click)="mySubmit($event)" >submit</button>
+	<button ion-button *ngIf="errorConnection" (click)="mySubmit($event)" color="danger">submit</button>
+	<!-- <button ion-button (click)="test()">submit2</button> -->
+	<!-- <ion-item *ngIf="myBool">{{ errorConnection | json }}</ion-item> -->
+	<!--<div *ngIf="errorConnection">Error with your autologin link please chech in intra at this link "https://intra.epitech.eu/admin/autolog"
+	 or in home page click in "ticket" then "generate aulogin link"</div> -->
 </ion-content>
 
 <!-- passport -->

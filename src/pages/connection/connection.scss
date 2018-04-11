@@ -1,16 +1,6 @@
 page-connection {
 	.title {
 		text-align: center;
-		// background-color: #55acee;
-		// color: #55acee;
-		// background-color: #1F3356;
-		// color: black;
-	}
-	.header {
-		// background-color: #55acee;
-		// margin-top: -10px;
-		// margin-bottom: -20px;
-		// padding-bottom: -20px;
 	}
 	.body {
 		display: inline-block;
@@ -18,10 +8,9 @@ page-connection {
 		text-align: center;
 	}
 	.h1 {
-		// background-color: black;
 		font-size: 50px;
 	}
-	input {
-		color: black;
+	.input {
+		color: white;
 	}
 }

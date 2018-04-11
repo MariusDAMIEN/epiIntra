@@ -4,7 +4,7 @@ import { ConnectionPage } from './connection';
 
 @NgModule({
   declarations: [
-    ConnectionPage,
+    // ConnectionPage,
   ],
   imports: [
     IonicPageModule.forChild(ConnectionPage),

@@ -20,8 +20,8 @@ print_r($res);
 
 $curl = curl_init();
 $params = ['format' => 'json',
-           'login' => 'harold.armijo-leon@epitech.eu',
-           'password' => '1^AO0@kt',
+           'login' => '',
+           'password' => '',
            'remember_me' => 'on'];
 $params_string = http_build_query($params);
 $opt = [CURLOPT_URL => 'https://intra.epitech.eu',
